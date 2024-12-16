@@ -8,40 +8,53 @@
 </head>
 <body>
   <header>
-    <h1>Veteran Builders</h1>
-    <nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</nav>
+    <div class="container">
+      <h1 class="logo">Veteran Builders</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="home">
-    <h2>Welcome to Veteran Builders</h2>
-    <p>We are a veteran-owned construction company specializing in decks, outdoor living spaces, and remodeling in the Lake Oconee and Lake Sinclair areas.</p>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Your Trusted Partner for Outdoor Living Spaces</h2>
+      <p>Veteran Builders specializes in creating stunning decks, outdoor living areas, and home remodels.</p>
+      <a href="#contact" class="cta-btn">Get a Free Estimate</a>
+    </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Deck Building</li>
-      <li>Outdoor Living Spaces</li>
-      <li>Remodeling</li>
-      <li>General Construction</li>
-    </ul>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Deck Building</h3>
+        <p>Custom-designed decks built with precision and care.</p>
+      </div>
+      <div class="service-item">
+        <h3>Outdoor Living Spaces</h3>
+        <p>Transform your backyard into a relaxing retreat.</p>
+      </div>
+      <div class="service-item">
+        <h3>Remodeling</h3>
+        <p>Expert renovations to make your home truly yours.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Veteran Builders was founded by veterans dedicated to delivering top-quality construction services. With a focus on craftsmanship and reliability, we aim to bring your outdoor living dreams to life.</p>
+    <p>Veteran Builders is a veteran-owned business dedicated to delivering top-quality craftsmanship with honesty and integrity. Serving the Lake Oconee and Lake Sinclair areas, we take pride in helping homeowners create their dream spaces.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/YOUR_EMAIL" method="POST">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -51,9 +64,9 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
-    <p>Serving: Greensboro, Eatonton, Milledgeville, and surrounding areas.</p>
+    <p>Serving Greensboro, Eatonton, Milledgeville, and surrounding areas.</p>
   </section>
 
   <footer>
