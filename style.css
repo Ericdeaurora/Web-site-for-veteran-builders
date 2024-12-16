@@ -1,62 +1,68 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 header {
   background: #2c3e50;
   color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.5rem;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 header nav ul li {
-  display: inline;
   margin: 0 15px;
 }
 
 header nav ul li a {
-  color: #fff;
   text-decoration: none;
-}
-
-section {
-  padding: 20px;
-  margin: 10px auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #2c3e50;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-form input, form textarea, form button {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-form button {
-  background: #2c3e50;
   color: #fff;
-  border: none;
-  cursor: pointer;
+}
+
+.hero {
+  background: url('your-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .cta-btn {
+  background: #b22222;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services, .about, .contact {
+  padding: 50px;
+  text-align: center;
 }
 
 footer {
@@ -64,9 +70,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  margin-top: 20px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
