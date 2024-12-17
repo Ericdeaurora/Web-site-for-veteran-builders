@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veteran Builders</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteran Builders</title>
+    <style>
+        /* Background styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Images/wood-texture.jpg') repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        /* Section styling */
+        section {
+            padding: 3rem 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        img {
+            display: block;
+            margin: 0 auto 1.5rem;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">Veteran Builders</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h2>Your Trusted Partner for Outdoor Living Spaces</h2>
-      <p>Veteran Builders specializes in creating stunning decks, outdoor living areas, and home remodels.</p>
-      <a href="#contact" class="cta-btn">Get a Free Estimate</a>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="Images/deck.jpg" alt="Deck Construction">
+        <p>Veteran Builders is a veteran-owned business dedicated to building high-quality decks and outdoor living spaces. We take pride in our craftsmanship, integrity, and service to the community.</p>
+    </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item">
-        <h3>Deck Building</h3>
-        <p>Custom-designed decks built with precision and care.</p>
-      </div>
-      <div class="service-item">
-        <h3>Outdoor Living Spaces</h3>
-        <p>Transform your backyard into a relaxing retreat.</p>
-      </div>
-      <div class="service-item">
-        <h3>Remodeling</h3>
-        <p>Expert renovations to make your home truly yours.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We specialize in residential construction, decks, remodeling, and outdoor living spaces. Veteran Builders is committed to delivering excellence and exceeding customer expectations.</p>
+    </section>
 
-  <section id="about" class="about">
-  <h2>About Us</h2>
-  <img src="Images/deck.jpg" alt="Our Team" style="max-width: 100%; height: auto;">
-  <p>Veteran Builders is a veteran-owned business...</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please reach out to us via email or phone. We look forward to helping you build your dream outdoor space!</p>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Serving Greensboro, Eatonton, Milledgeville, and surrounding areas.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Veteran Builders. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Veteran Builders. All Rights Reserved.
+    </footer>
 </body>
 </html>
