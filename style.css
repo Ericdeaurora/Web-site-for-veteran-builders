@@ -1,152 +1,71 @@
 /* General Styling */
-body {
+body, h1, h2, h3, p {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background: url('Images/wood-texture.jpeg') repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Header */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
 header {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1.5rem 1rem;
-}
-
-header img {
-    max-height: 50px;
-    vertical-align: middle;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 header h1 {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-    font-size: 2.2rem;
+    display: inline;
+    padding: 0 20px;
 }
 
-/* Navigation */
-nav {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
+nav ul {
+    list-style: none;
+    display: inline;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.hero {
+    background: url('Images/wood-texture.jpeg') center/cover no-repeat;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
+    position: relative;
 }
 
-nav a {
-    color: white;
-    text-decoration: underline;
-    margin: 0 1.5rem;
-    font-size: 1.1rem;
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
 }
 
-nav a:hover {
-    color: #ffcc00;
-}
-
-nav a.active {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-/* Hero Section */
-#hero {
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 3rem 1rem;
-    margin: 2rem auto;
-    max-width: 90%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#hero .btn {
-    display: inline-block;
-    background: #ffcc00;
-    color: black;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
-
-#hero .btn:hover {
-    background: #e6b800;
-}
-
-/* Preview Sections */
-#about-preview, #services-preview {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    margin: 3rem auto;
-    max-width: 90%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#about-preview img {
+.about img, .service-item img, .project-gallery img {
     max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+    margin-top: 15px;
 }
 
-#about-preview .btn, #services-preview .btn {
+.btn {
+    background: #ffc107;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
     display: inline-block;
-    background: #ffcc00;
-    color: black;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    margin-top: 1rem;
-    border-radius: 5px;
 }
 
-#about-preview .btn:hover, #services-preview .btn:hover {
-    background: #e6b800;
-}
-
-/* Footer */
 footer {
+    background: #222;
+    color: #fff;
     text-align: center;
-    padding: 2rem 1rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    margin-top: 2rem;
-}
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .socials a {
-    margin: 0 0.5rem;
-    color: #ffcc00;
-}
-
-footer .socials a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    #hero, #about-preview, #services-preview {
-        padding: 2rem 1rem;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
+    padding: 10px 0;
 }
