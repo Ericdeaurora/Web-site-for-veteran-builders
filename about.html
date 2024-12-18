@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Veteran Builders</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
@@ -14,18 +14,24 @@
     <!-- About Us Section -->
     <section class="section-background">
         <div class="overlay">
-            <h2>About Us</h2>
-            <p>Myself and Phil both grew up in and around construction. After serving in the Army, including 8 deployments to Afghanistan, we returned to construction to do it better and provide value without ripping people off.</p>
-            <img src="Images/placeholder.jpg" alt="About Us Image">
+            <h2>About Veteran Builders</h2>
+            <p>Veteran Builders is a veteran-owned company founded by construction experts who believe in honesty, integrity, and unmatched craftsmanship.</p>
+            <p>With a strong background in both the Army and construction, our goal is to deliver outdoor living spaces that exceed your expectations.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
+    <!-- JavaScript to Load Header and Footer -->
     <script>
-        document.getElementById("header-placeholder").innerHTML = '<object type="text/html" data="header.html"></object>';
-        document.getElementById("footer-placeholder").innerHTML = '<object type="text/html" data="footer.html"></object>';
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     </script>
 </body>
 </html>
