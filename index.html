@@ -34,8 +34,15 @@
 
     <!-- Include Header and Footer -->
     <script>
-        document.getElementById("header-placeholder").innerHTML = '<object type="text/html" data="header.html"></object>';
-        document.getElementById("footer-placeholder").innerHTML = '<object type="text/html" data="footer.html"></object>';
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     </script>
 </body>
 </html>
