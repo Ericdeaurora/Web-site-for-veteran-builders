@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Veteran Builders</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
@@ -15,5 +15,24 @@
     <section class="section-background">
         <div class="overlay">
             <h2>Contact Us</h2>
-            <p>Ready to start your project? Get in touch with us today!</p>
-            <p>Email: contact@veteran
+            <p>We’d love to hear from you. Reach out for a free quote today!</p>
+            <p>Email: <a href="mailto:info@veteranbuilders.com">info@veteranbuilders.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to Load Header and Footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
