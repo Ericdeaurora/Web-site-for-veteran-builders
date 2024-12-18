@@ -2,13 +2,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('Images/wood-texture.jpeg') repeat;
+    background: url('Images/wood-texture.jpg') repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header */
 header {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
@@ -28,7 +29,7 @@ header h1 {
     font-size: 2.2rem;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 1rem;
@@ -51,64 +52,96 @@ nav a.active {
     text-decoration: none;
 }
 
-/* Sections Styling */
-section {
-    padding: 3rem 2rem;
+/* Hero Section */
+#hero {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#hero .btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+#hero .btn:hover {
+    background: #e6b800;
+}
+
+/* About Preview Section */
+#about-preview {
+    text-align: center;
+    padding: 3rem 1rem;
     background-color: rgba(255, 255, 255, 0.95);
     margin: 3rem auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.1rem;
-    margin: 0 auto 1.5rem;
-    text-align: justify;
     max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Styling */
-.about img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    max-height: 400px;
-    border-radius: 8px;
+#about-preview .btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+#about-preview .btn:hover {
+    background: #e6b800;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     margin-top: 2rem;
 }
 
-/* Media Queries for Responsive Design */
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .socials a {
+    margin: 0 0.5rem;
+    color: #ffcc00;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     nav a {
         display: block;
         margin: 0.5rem 0;
     }
 
-    section {
+    #hero, #about-preview {
         padding: 2rem 1rem;
     }
 
-    h2 {
+    header h1 {
         font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 }
