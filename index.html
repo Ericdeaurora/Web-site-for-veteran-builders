@@ -8,107 +8,34 @@
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header>
-        <div class="container">
-            <h1>Veteran Builders</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="section-background">
         <div class="overlay">
             <h2>Transforming Your Outdoor Living Spaces</h2>
-            <p>Creating beautiful and functional decks and outdoor living areas that you’ll love for years to come.</p>
-            <a href="#contact" class="btn">Get a Free Quote</a>
+            <p>At Veteran Builders, we create beautiful and functional decks and outdoor living areas you’ll love for years to come.</p>
+            <a href="contact.html" class="btn">Get a Free Quote</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <p>Myself and Phil both grew up in and around construction. After serving in the Army, including 8 deployments to Afghanistan, we returned to what we know best: construction. We founded Veteran Builders to provide honest, high-quality craftsmanship. We pride ourselves on integrity, discipline, and delivering results without ripping people off.</p>
-                <img src="Images/placeholder.jpg" alt="About Us Image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Deck Building</h3>
-                <p>We specialize in custom decks built with precision and care.</p>
-                <img src="Images/placeholder.jpg" alt="Deck Service">
-            </div>
-            <div class="service-item">
-                <h3>Outdoor Living Spaces</h3>
-                <p>Transform your backyard with functional and beautiful outdoor spaces.</p>
-                <img src="Images/placeholder.jpg" alt="Outdoor Living">
-            </div>
-            <div class="service-item">
-                <h3>Remodeling & Renovations</h3>
-                <p>Update and enhance your home with our top-tier remodeling services.</p>
-                <img src="Images/placeholder.jpg" alt="Remodeling">
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <div class="project-gallery">
-                <img src="Images/placeholder.jpg" alt="Project 1">
-                <img src="Images/placeholder.jpg" alt="Project 2">
-                <img src="Images/placeholder.jpg" alt="Project 3">
-                <img src="Images/placeholder.jpg" alt="Project 4">
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <blockquote>
-                "Veteran Builders transformed our backyard into a dream space. Professional and reliable!"
-                <cite>- Happy Customer</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Ready to start your next project? Get in touch with us!</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <!-- Why Choose Us Section -->
+    <section class="section-background">
+        <div class="overlay">
+            <h2>Why Choose Us?</h2>
+            <p>We are veteran-owned, honest, and dedicated to quality craftsmanship. Integrity, discipline, and attention to detail are at the heart of every project.</p>
+            <a href="about.html" class="btn">Learn More About Us</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Veteran Builders. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <!-- Include Header and Footer -->
+    <script>
+        document.getElementById("header-placeholder").innerHTML = '<object type="text/html" data="header.html"></object>';
+        document.getElementById("footer-placeholder").innerHTML = '<object type="text/html" data="footer.html"></object>';
+    </script>
 </body>
 </html>
