@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon 2.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32 2.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16 2.png">
-    <link rel="manifest" href="Images/site.webmanifest 2">
-    <link rel="icon" href="Images/favicon 2.ico" type="image/x-icon">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <title>About Us - Veteran Builders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
     <!-- About Us Section -->
-    <section id="about" style="padding: 40px; text-align: center;">
-        <h2>About Us</h2>
-        <img src="Images/wood-texture.jpeg" alt="About Us" style="width: 300px; height: auto; border-radius: 8px;">
-        <p>Veteran Builders is a veteran-owned business dedicated to creating exceptional outdoor living spaces. Our team brings years of experience, integrity, and craftsmanship to every project.</p>
+    <section class="section-background">
+        <div class="overlay">
+            <h2>About Us</h2>
+            <p>Myself and Phil both grew up in and around construction. After serving in the Army, including 8 deployments to Afghanistan, we returned to construction to do it better and provide value without ripping people off.</p>
+            <img src="Images/placeholder.jpg" alt="About Us Image">
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 10px; background-color: #333; color: #fff;">
-        <p>&copy; 2024 Veteran Builders. All Rights Reserved.</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        document.getElementById("header-placeholder").innerHTML = '<object type="text/html" data="header.html"></object>';
+        document.getElementById("footer-placeholder").innerHTML = '<object type="text/html" data="footer.html"></object>';
+    </script>
 </body>
 </html>
