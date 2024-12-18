@@ -78,8 +78,8 @@ nav a.active {
     background: #e6b800;
 }
 
-/* About Preview Section */
-#about-preview {
+/* Preview Sections */
+#about-preview, #services-preview {
     text-align: center;
     padding: 3rem 1rem;
     background-color: rgba(255, 255, 255, 0.95);
@@ -89,7 +89,12 @@ nav a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#about-preview .btn {
+#about-preview img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#about-preview .btn, #services-preview .btn {
     display: inline-block;
     background: #ffcc00;
     color: black;
@@ -99,7 +104,7 @@ nav a.active {
     border-radius: 5px;
 }
 
-#about-preview .btn:hover {
+#about-preview .btn:hover, #services-preview .btn:hover {
     background: #e6b800;
 }
 
@@ -137,7 +142,7 @@ footer .socials a:hover {
         margin: 0.5rem 0;
     }
 
-    #hero, #about-preview {
+    #hero, #about-preview, #services-preview {
         padding: 2rem 1rem;
     }
 
