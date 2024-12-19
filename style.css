@@ -9,42 +9,45 @@ body {
 
 /* Header Styles */
 .header-container {
-    text-align: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduce padding to make the header smaller */
     background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: white;
+    text-align: center;
+    position: relative;
 }
 
 /* Logo Styles */
 .logo-container {
-    margin-bottom: 20px;
+    margin-bottom: 5px; /* Reduce spacing between logo and navigation */
 }
 
 .logo {
-    max-width: 40%; /* Logo size */
+    max-width: 40%; /* Reduce logo size */
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Navigation Styles */
 .nav-container {
-    margin-top: 10px;
+    text-align: center; /* Center navigation */
 }
 
 .nav-container nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Horizontal alignment */
+    display: flex; /* Horizontal layout */
     justify-content: center; /* Center navigation items */
-    gap: 30px; /* Spacing between items */
+    gap: 20px; /* Spacing between navigation links */
+}
+
+.nav-container nav ul li {
+    display: inline; /* Inline display for list items */
 }
 
 .nav-container nav ul li a {
-    text-decoration: underline; /* Underlined links */
+    text-decoration: underline; /* Underline links */
     color: white;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller font size for compact look */
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
@@ -58,7 +61,7 @@ section {
     padding: 50px 20px;
     margin: 20px auto;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -67,13 +70,13 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* Matches header background */
     color: white;
     font-size: 14px;
 }
 
 /* Button Styles */
-button, .btn {
+button, .button {
     background: #333;
     color: white;
     padding: 10px 20px;
@@ -83,18 +86,17 @@ button, .btn {
     transition: background 0.3s ease;
 }
 
-button:hover, .btn:hover {
+button:hover, .button:hover {
     background: #555;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        max-width: 80%;
+        max-width: 70%; /* Adjust for smaller screens */
     }
 
     .nav-container nav ul {
         flex-direction: column; /* Stack links vertically on smaller screens */
-        gap: 10px;
     }
 }
