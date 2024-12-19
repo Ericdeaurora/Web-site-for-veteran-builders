@@ -12,7 +12,7 @@ body {
     padding: 20px;
     background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: white;
-    text-align: center; /* Center content in the header */
+    text-align: center;
     position: relative;
 }
 
@@ -22,22 +22,23 @@ body {
 }
 
 .logo {
-    max-width: 75%; /* Logo width is 3/4 of the header width */
+    max-width: 50%; /* Current logo size */
     height: auto;
 }
 
 /* Navigation Styles */
 .nav-container {
-    text-align: center; /* Center navigation tabs */
+    text-align: center; /* Center navigation */
+    margin-top: 10px; /* Add spacing between logo and navigation */
 }
 
 .nav-container nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Horizontally align navigation links */
-    gap: 20px; /* Add spacing between links */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: center; /* Center navigation items */
+    gap: 20px; /* Add spacing between navigation links */
 }
 
 .nav-container nav ul li {
@@ -45,15 +46,15 @@ body {
 }
 
 .nav-container nav ul li a {
-    text-decoration: underline; /* Underline navigation text */
+    text-decoration: underline; /* Underline links */
     color: white;
-    padding: 5px 10px;
     font-size: 18px;
+    padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
 .nav-container nav ul li a:hover {
-    color: #f0c040; /* Hover effect for navigation links */
+    color: #f0c040; /* Hover effect */
 }
 
 /* Section Styles */
@@ -93,10 +94,10 @@ button:hover, .button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        max-width: 90%; /* Make the logo smaller on small screens */
+        max-width: 90%;
     }
 
     .nav-container nav ul {
-        flex-direction: column; /* Stack links vertically on small screens */
+        flex-direction: column; /* Stack links vertically on smaller screens */
     }
 }
