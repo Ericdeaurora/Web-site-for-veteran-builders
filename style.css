@@ -18,12 +18,87 @@ body {
 
 /* Logo Styles */
 .logo-container {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .logo {
-    max-width: 50%; /* Current logo size */
+    max-width: 30%; /* Adjusted logo size */
     height: auto;
 }
-    
-/* Navig
+
+/* Navigation Styles */
+.nav-container {
+    text-align: center; /* Center navigation */
+    margin-top: 10px; /* Space between logo and navigation */
+}
+
+.nav-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Inline-block for centering */
+}
+
+.nav-container nav ul li {
+    display: inline; /* Horizontal layout */
+    margin: 0 15px;
+}
+
+.nav-container nav ul li a {
+    text-decoration: underline; /* Underlined links */
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-container nav ul li a:hover {
+    color: #f0c040; /* Hover effect */
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Matches header background */
+    color: white;
+    font-size: 14px;
+}
+
+/* Button Styles */
+button, .button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%; /* Adjusted logo size for smaller screens */
+    }
+
+    .nav-container nav ul li {
+        display: block; /* Stack navigation links */
+        margin: 10px 0;
+    }
+}
