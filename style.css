@@ -25,24 +25,24 @@ body {
     max-width: 50%; /* Current logo size */
     height: auto;
 }
-
+    
 /* Navigation Styles */
 .nav-container {
     text-align: center; /* Center navigation */
-    margin-top: 10px; /* Add spacing between logo and navigation */
+    margin-top: 10px; /* Spacing between logo and navigation */
 }
 
 .nav-container nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox to create a horizontal layout */
+    display: flex; /* Horizontal layout */
     justify-content: center; /* Center navigation items */
-    gap: 20px; /* Add spacing between navigation links */
+    gap: 20px; /* Spacing between navigation links */
 }
 
 .nav-container nav ul li {
-    display: inline;
+    display: inline; /* Inline display for list items */
 }
 
 .nav-container nav ul li a {
