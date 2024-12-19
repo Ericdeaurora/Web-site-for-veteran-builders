@@ -17,11 +17,11 @@ body {
 
 /* Logo Styles */
 .logo-container {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .logo {
-    max-width: 60%; /* Adjust logo size */
+    max-width: 40%; /* Logo size */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -36,15 +36,16 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: flex; /* Horizontal alignment */
     justify-content: center; /* Center navigation items */
-    gap: 30px; /* Space between links */
+    gap: 30px; /* Spacing between items */
 }
 
 .nav-container nav ul li a {
-    text-decoration: underline; /* Underline links */
+    text-decoration: underline; /* Underlined links */
     color: white;
     font-size: 18px;
+    padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
