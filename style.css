@@ -9,27 +9,26 @@ body {
 
 /* Header Styles */
 .header-container {
+    text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: white;
-    text-align: center;
-    position: relative;
 }
 
 /* Logo Styles */
 .logo-container {
-    text-align: center;
-    margin-bottom: 20px; /* Spacing between logo and navigation */
+    margin-bottom: 15px;
 }
 
 .logo {
-    max-width: 50%; /* Adjust logo size */
+    max-width: 60%; /* Adjust logo size */
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Navigation Styles */
 .nav-container {
-    text-align: center; /* Center navigation */
     margin-top: 10px;
 }
 
@@ -37,20 +36,15 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Horizontal layout */
+    display: flex;
     justify-content: center; /* Center navigation items */
-    gap: 20px; /* Space between navigation links */
-}
-
-.nav-container nav ul li {
-    display: inline-block;
+    gap: 30px; /* Space between links */
 }
 
 .nav-container nav ul li a {
     text-decoration: underline; /* Underline links */
     color: white;
     font-size: 18px;
-    padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
@@ -63,7 +57,7 @@ section {
     padding: 50px 20px;
     margin: 20px auto;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -72,7 +66,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7); /* Matches header background */
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 14px;
 }
@@ -100,6 +94,6 @@ button:hover, .btn:hover {
 
     .nav-container nav ul {
         flex-direction: column; /* Stack links vertically on smaller screens */
-        gap: 10px; /* Space between items on smaller screens */
+        gap: 10px;
     }
 }
