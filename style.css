@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    max-width: 30%; /* Adjust logo size */
+    max-width: 50%; /* Adjust logo size */
     height: auto;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-container nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav-container nav ul li a {
@@ -72,7 +72,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* Matches header background */
     color: white;
     font-size: 14px;
 }
@@ -100,5 +100,6 @@ button:hover, .btn:hover {
 
     .nav-container nav ul {
         flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 10px; /* Space between items on smaller screens */
     }
 }
