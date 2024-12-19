@@ -11,29 +11,24 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: white;
 }
 
-.logo {
-    max-height: 60px;
-    width: auto;
-}
-
-header nav ul {
-    display: flex;
+/* Navigation Styles */
+.nav-container nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-header nav ul li {
-    margin-left: 20px;
+.nav-container nav ul li {
+    margin: 10px 0; /* Adds spacing between stacked links */
 }
 
-header nav ul li a {
+.nav-container nav ul li a {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -41,8 +36,20 @@ header nav ul li a {
     transition: border-bottom 0.3s ease;
 }
 
-header nav ul li a:hover {
+.nav-container nav ul li a:hover {
     border-bottom: 2px solid white;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 150px; /* Adjust size as needed */
+    width: auto;
 }
 
 /* Section Styles */
@@ -96,9 +103,14 @@ button:hover, .button:hover {
         align-items: flex-start;
     }
 
-    header nav ul {
+    .nav-container nav ul {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .logo-container {
+        justify-content: flex-start;
+        margin-top: 10px;
     }
 
     header nav ul li {
