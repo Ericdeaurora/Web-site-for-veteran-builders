@@ -18,35 +18,36 @@ body {
 
 /* Logo Styles */
 .logo-container {
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px; /* Spacing between logo and navigation */
 }
 
 .logo {
-    max-width: 30%; /* Adjusted logo size */
+    max-width: 30%; /* Adjust logo size */
     height: auto;
 }
 
 /* Navigation Styles */
 .nav-container {
     text-align: center; /* Center navigation */
-    margin-top: 10px; /* Space between logo and navigation */
+    margin-top: 10px;
 }
 
 .nav-container nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block; /* Inline-block for centering */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center navigation items */
+    gap: 20px; /* Space between navigation links */
 }
 
 .nav-container nav ul li {
-    display: inline; /* Horizontal layout */
-    margin: 0 15px;
+    display: inline;
 }
 
 .nav-container nav ul li a {
-    text-decoration: underline; /* Underlined links */
+    text-decoration: underline; /* Underline links */
     color: white;
     font-size: 18px;
     padding: 5px 10px;
@@ -71,13 +72,13 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7); /* Matches header background */
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 14px;
 }
 
 /* Button Styles */
-button, .button {
+button, .btn {
     background: #333;
     color: white;
     padding: 10px 20px;
@@ -87,18 +88,17 @@ button, .button {
     transition: background 0.3s ease;
 }
 
-button:hover, .button:hover {
+button:hover, .btn:hover {
     background: #555;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        max-width: 80%; /* Adjusted logo size for smaller screens */
+        max-width: 80%;
     }
 
-    .nav-container nav ul li {
-        display: block; /* Stack navigation links */
-        margin: 10px 0;
+    .nav-container nav ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
     }
 }
