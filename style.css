@@ -29,7 +29,7 @@ body {
 
 /* Navigation Styles */
 .nav-container {
-    text-align: center; /* Center navigation */
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -37,9 +37,9 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Horizontal layout */
-    justify-content: center; /* Center navigation items */
-    gap: 20px; /* Spacing between links */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .nav-container nav ul li a {
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-container nav ul li a:hover {
-    color: #f0c040; /* Hover effect */
+    color: #f0c040;
 }
 
 /* Section Styles */
@@ -59,7 +59,7 @@ section {
     padding: 50px 20px;
     margin: 20px auto;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -91,10 +91,11 @@ button:hover, .button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        max-width: 70%; /* Adjust logo size for smaller screens */
+        max-width: 70%;
     }
 
     .nav-container nav ul {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column;
+        gap: 10px;
     }
 }
