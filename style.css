@@ -90,11 +90,27 @@ button:hover, .button:hover {
 
 /* Social Media Icons */
 .social-media {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .social-media a {
     margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+
+.social-icon {
+    width: 50px; /* Reduced size */
+    height: 50px;
+    border-radius: 50%; /* Optional: circular icons */
+    background-color: white; /* Optional: white background for contrast */
+    padding: 5px; /* Optional: padding for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
 /* Responsive Design */
