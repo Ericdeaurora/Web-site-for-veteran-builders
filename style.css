@@ -88,39 +88,72 @@ button:hover, .button:hover {
     background: #555;
 }
 
+/* Contact Form Styling */
+#contact-form {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Limit the width for better appearance */
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align form items */
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 90%; /* Make inputs and textarea fit mobile screens */
+    max-width: 500px; /* Limit max width */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
 /* Social Media Icons */
 .social-media {
-    text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px; /* Add spacing below icons */
 }
 
 .social-media a {
     margin: 0 10px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.social-media a:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
-.social-icon {
-    width: 40px; /* Adjust size of icons */
-    height: 40px;
-    border-radius: 50%; /* Optional: circular icons */
-    background-color: white; /* Optional: white background for contrast */
-    padding: 5px; /* Optional: padding for better visibility */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .logo {
-        max-width: 70%;
+    #contact-form {
+        padding: 15px;
     }
 
-    .nav-container nav ul {
-        flex-direction: column;
-        gap: 10px;
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%; /* Full width for smaller screens */
     }
 }
