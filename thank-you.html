@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Veteran Builders</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
 
+    <!-- Thank You Message -->
+    <section id="thank-you">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully. We’ll get back to you as soon as possible.</p>
+        <p><a href="index.html" class="button">Return to Home</a></p>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to Load Header and Footer -->
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
