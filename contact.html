@@ -31,7 +31,7 @@
 
     <!-- Contact Form -->
     <section id="contact-form">
-        <form action="#" method="post">
+        <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -40,6 +40,12 @@
             
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <!-- Redirect to Thank-You Page -->
+            <input type="hidden" name="_next" value="http://veteranbuildersco.com/thank-you.html">
+            
+            <!-- Anti-Spam Field -->
+            <input type="hidden" name="_captcha" value="false">
             
             <button type="submit">Submit</button>
         </form>
