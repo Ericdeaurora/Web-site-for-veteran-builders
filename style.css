@@ -1,75 +1,27 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url("Images/wood-texture.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-}
 
-h1, h2 {
+/* Social Media Icons */
+.social-media {
     text-align: center;
-    color: #fff;
+margin-bottom: 20px;
 }
 
-p {
-    text-align: center;
-    color: #f4f4f4;
-}
-
-a.button {
+.social-media a {
+margin: 0 10px;
     display: inline-block;
-    text-decoration: none;
-    background: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-a.button:hover {
-    background: #0056b3;
+.social-media a:hover {
+    transform: scale(1.1); /* Hover effect */
 }
 
-/* Header Styles */
-.header-container {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.social-icon {
+    width: 50px; /* Reduced size */
+    height: 50px;
+    border-radius: 50%; /* Optional: circular icons */
+    background-color: white; /* Optional: white background for contrast */
+    padding: 5px; /* Optional: padding for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
-.nav-container ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav-container ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav-container ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-section {
-    padding: 50px;
-    margin: 20px auto;
-    max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Styles */
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+/* Responsive Design */
