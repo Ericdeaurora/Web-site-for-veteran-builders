@@ -1,56 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Veteran Builders</title>
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Favicon -->
-  <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Veteran Builders</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
-  <!-- Header -->
-  <div id="header-placeholder"></div>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
 
-  <!-- About Us Section -->
-  <section class="section-background">
-    <div class="overlay">
-      <h2>About Veteran Builders</h2>
-      <p>Veteran Builders is a veteran-owned company founded by construction experts who believe in honesty, integrity, and unmatched craftsmanship.</p>
-      <p>With a strong background in both the Army and construction, our goal is to deliver outdoor living spaces that exceed your expectations.</p>
-    </div>
-  </section>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      At Veteran Builders, our story is one of dedication, service, and a passion for creating something lasting. Founded by Eric DeAurora and Philip Marchman, two U.S. Army veterans, our mission is to bring honesty, quality craftsmanship, and a personal touch to every project we take on.
-    </p>
-    <p>
-      Growing up surrounded by the construction world, we both developed a deep respect for hard work and the details that make a house a home. After years of military service, we realized we could use those values—discipline, integrity, and teamwork—to build something meaningful for homeowners in our community.
-    </p>
-    <p>
-      Veteran Builders specializes in crafting custom decks, outdoor living spaces, and residential remodeling projects. Based in the heart of Georgia, we proudly serve the Lake Oconee and Lake Sinclair areas. Every project we undertake reflects our commitment to transforming ideas into reality while building trust and long-lasting relationships with our clients.
-    </p>
-    <p>
-      When you work with Veteran Builders, you’re not just hiring a contractor—you’re working with people who genuinely care about your home and your experience. Thank you for trusting us to make your vision a reality. We can’t wait to bring your dream project to life.
-    </p>
-  </section>
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Veteran Builders is a veteran-owned company founded by Eric DeAurora and Philip Marchman. With a strong background in both construction and military service, we are committed to delivering quality craftsmanship, integrity, and customer satisfaction in every project we undertake.
+        </p>
+        <p>
+            We specialize in custom decks, outdoor living spaces, and residential remodeling. Based in the heart of Georgia, we proudly serve the Lake Oconee and Lake Sinclair areas. Every project we complete reflects our dedication to transforming ideas into reality while building trust and long-lasting relationships with our clients.
+        </p>
+    </section>
 
-  <!-- Footer -->
-  <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
 
-  <!-- JavaScript to Load Header and Footer -->
-  <script>
-    // Load Header
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    <!-- JavaScript to Load Header and Footer -->
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
 
-    // Load Footer
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-  </script>
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
 </body>
 </html>
