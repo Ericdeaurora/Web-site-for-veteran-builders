@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
     <title>About Us - Veteran Builders</title>
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
     <!-- Favicon -->
-    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+<link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
-    <!-- Header -->
-    <div id="header-placeholder"></div>
+<!-- Header -->
+<div id="header-placeholder"></div>
 
-    <!-- About Us Section -->
+<!-- About Us Section -->
+    <section class="section-background">
+        <div class="overlay">
+            <h2>About Veteran Builders</h2>
+            <p>Veteran Builders is a veteran-owned company founded by construction experts who believe in honesty, integrity, and unmatched craftsmanship.</p>
+            <p>With a strong background in both the Army and construction, our goal is to deliver outdoor living spaces that exceed your expectations.</p>
+        </div>
     <section id="about">
         <h2>About Us</h2>
         <p>
@@ -28,22 +35,19 @@
         <p>
             When you work with Veteran Builders, you’re not just hiring a contractor—you’re working with people who genuinely care about your home and your experience. Thank you for trusting us to make your vision a reality. We can’t wait to bring your dream project to life.
         </p>
-    </section>
+</section>
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
 
-    <!-- JavaScript to Load Header and Footer -->
-    <script>
+<!-- JavaScript to Load Header and Footer -->
+<script>
         // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+fetch('header.html')
+.then(response => response.text())
+.then(data => document.getElementById('header-placeholder').innerHTML = data);
 
         // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
-</body>
-</html>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => document.getElementById('footer-placeholder').innerHTML = data);
