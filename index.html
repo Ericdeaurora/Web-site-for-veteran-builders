@@ -9,7 +9,21 @@
 </head>
 <body>
     <!-- Header -->
-    <div id="header-placeholder"></div>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Veteran Builders Logo" class="logo">
+            </a>
+            <nav class="sticky-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section id="hero">
@@ -33,17 +47,20 @@
     </section>
 
     <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
-    <!-- JavaScript to Load Header and Footer -->
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data);
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
+    <footer>
+        <div class="footer-container">
+            <p><strong>Email:</strong> <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/veteran.builders" target="_blank" aria-label="Instagram">
+                    <img src="Images/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank" aria-label="Facebook">
+                    <img src="Images/facebook-icon.png" alt="Facebook">
+                </a>
+            </div>
+            <p>&copy; 2025 Veteran Builders. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
