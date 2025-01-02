@@ -11,62 +11,72 @@
 </head>
 <body>
     <!-- Header -->
-    <div id="header-placeholder"></div>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Veteran Builders Logo" class="logo">
+            </a>
+            <nav class="sticky-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
             <h1>Welcome to Veteran Builders</h1>
-            <p>Quality construction services you can trust. Proudly serving the Lake Oconee and Lake Sinclair areas.</p>
-            <a href="contact.html" class="button">Get a Free Quote</a>
+            <p>Transforming your outdoor living spaces with quality and integrity.</p>
+            <a href="#contact" class="button">Get a Free Quote</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Veteran Builders is a veteran-owned company founded by Eric DeAurora and Philip Marchman. We specialize in custom decks, outdoor living spaces, and residential remodeling, delivering exceptional craftsmanship and integrity with every project.</p>
-            <a href="about.html" class="button">Learn More</a>
-        </div>
+        <h2>About Us</h2>
+        <p>Veteran Builders is a veteran-owned company specializing in custom decks, outdoor living spaces, and residential remodeling. Proudly serving the Lake Oconee and Lake Sinclair areas.</p>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Custom Decks</li>
-                <li>Outdoor Living Spaces</li>
-                <li>Home Remodeling</li>
-            </ul>
-            <a href="services.html" class="button">Explore Services</a>
-        </div>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Decks</li>
+            <li>Outdoor Living Spaces</li>
+            <li>Home Remodeling</li>
+        </ul>
+        <a href="services.html" class="button">Explore Services</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Ready to start your next project? Contact us today!</p>
-            <a href="contact.html" class="button">Get in Touch</a>
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/veteran.builders" target="_blank">
+                <img src="Images/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank">
+                <img src="Images/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
-    <!-- JavaScript to Load Header and Footer -->
-    <script>
-        // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data);
-
-        // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
+    <footer>
+        <p>&copy; 2025 Veteran Builders. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
