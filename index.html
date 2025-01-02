@@ -4,28 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veteran Builders - Home</title>
-    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Favicon -->
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="Images/logo.png" alt="Veteran Builders Logo" class="logo">
-            </a>
-            <nav class="sticky-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
     <section id="hero">
@@ -46,7 +30,7 @@
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Custom Decks</li>
+            <li>Custom Deck Construction</li>
             <li>Outdoor Living Spaces</li>
             <li>Home Remodeling</li>
         </ul>
@@ -69,14 +53,17 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Veteran Builders. All rights reserved.</p>
-        <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to Load Header and Footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
 </body>
 </html>
