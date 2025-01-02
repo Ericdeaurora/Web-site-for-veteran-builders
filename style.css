@@ -4,17 +4,17 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #777; /* Medium gray background */
+    background-color: #ddd; /* Lighter gray background */
 }
 
 h1, h2 {
-    color: #f4f4f4; /* Light font color */
+    color: #0066cc;
     margin-bottom: 10px;
     text-align: center;
 }
 
 p {
-    color: #ddd; /* Light gray text for better contrast */
+    color: #555;
     font-size: 1rem;
     text-align: center;
 }
@@ -34,120 +34,72 @@ li {
     margin: 0;
 }
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+/* Contact Section */
+#contact-details {
     text-align: center;
-}
-
-header .logo {
-    max-width: 200px;
-    height: auto;
-}
-
-/* Navigation Bar */
-nav {
-    background: #444; /* Slightly lighter gray for distinction */
-    position: sticky; /* Sticky navigation */
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul a {
-    color: #fff;
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-nav ul a:hover {
-    background: #555;
-}
-
-/* Hero Section */
-#hero {
-    background: url('Images/wood-texture.jpeg') no-repeat center center/cover;
-    color: #fff; /* Bright font color for contrast */
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Button Styling */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #0066cc;
-    color: #fff;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.button:hover {
-    background: #004a99;
-}
-
-/* Sections */
-section {
-    padding: 50px 20px;
-    margin: 20px 0;
-    background: #555; /* Dark gray background for sections */
-    color: #fff; /* Light text color for contrast */
+    padding: 30px 20px;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#services ul {
+#contact-details .social-media {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-top: 20px;
 }
 
-#services li {
-    flex: 1 1 calc(30% - 20px);
-    background: #666;
+#contact-details .social-icon {
+    width: 30px; /* Adjusted to smaller size */
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+#contact-details .social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+#contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #004a99;
 }
 
 /* Footer */
@@ -161,20 +113,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
+    .social-media {
         flex-direction: column;
-        gap: 10px;
     }
 
-    .hero-content {
-        padding: 15px;
-    }
-
-    #hero h1 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
+    .social-icon {
+        width: 40px;
+        height: 40px;
     }
 }
