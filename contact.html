@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Veteran Builders</title>
-    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Favicon -->
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
 </head>
 <body>
@@ -20,10 +18,10 @@
         <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
         <p>Connect with us on social media:</p>
         <div class="social-media">
-            <a href="https://www.instagram.com/veteran.builders?igsh=MTFsZHUxcDk1Zmd2aA%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/veteran.builders" target="_blank">
                 <img src="Images/instagram-icon.png" alt="Instagram" class="social-icon">
             </a>
-            <a href="https://www.facebook.com/share/19eizGR8J5/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank">
                 <img src="Images/facebook-icon.png" alt="Facebook" class="social-icon">
             </a>
         </div>
@@ -41,12 +39,6 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             
-            <!-- Redirect to Thank-You Page -->
-            <input type="hidden" name="_next" value="http://veteranbuildersco.com/thank-you.html">
-            
-            <!-- Anti-Spam Field -->
-            <input type="hidden" name="_captcha" value="false">
-            
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -56,12 +48,10 @@
 
     <!-- JavaScript to Load Header and Footer -->
     <script>
-        // Load Header
         fetch('header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header-placeholder').innerHTML = data);
 
-        // Load Footer
         fetch('footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer-placeholder').innerHTML = data);
