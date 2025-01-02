@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #ddd; /* Lighter gray background */
+    background-color: #f4f4f4; /* Softer gray */
 }
 
 h1, h2 {
@@ -37,10 +37,11 @@ li {
 /* Contact Section */
 #contact-details {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
 #contact-details .social-media {
@@ -51,8 +52,8 @@ li {
 }
 
 #contact-details .social-icon {
-    width: 30px; /* Adjusted to smaller size */
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s;
 }
 
@@ -118,7 +119,7 @@ footer {
     }
 
     .social-icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 }
