@@ -1,15 +1,30 @@
 /* General Styles */
+:root {
+    --primary-color: #0066cc;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --heading-margin-bottom: 10px;
+    --transition-duration: 0.3s;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
+    color: var(--text-color);
+    background-color: var(--background-color); /* Softer gray */
 }
 
 h1, h2 {
-    color: #0066cc;
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    margin-bottom: var(--heading-margin-bottom);
     text-align: center;
 }
 
@@ -34,21 +49,30 @@ li {
     margin: 0;
 }
 
-/* Social Media Icons */
-.social-media {
+/* Contact Section */
+#contact-details {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+}
+
+#contact-details .social-media {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
 }
 
-.social-media .social-icon {
-    width: 40px; /* Adjusted size for better proportions */
+#contact-details .social-icon {
+    width: 40px;
     height: 40px;
-    transition: transform 0.3s;
+    transition: transform var(--transition-duration);
 }
 
-.social-media .social-icon:hover {
+#contact-details .social-icon:hover {
     transform: scale(1.2);
 }
 
@@ -59,7 +83,7 @@ li {
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 #contact-form label {
@@ -81,13 +105,13 @@ li {
 #contact-form button {
     display: inline-block;
     padding: 10px 20px;
-    background: #0066cc;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background var(--transition-duration);
 }
 
 #contact-form button:hover {
@@ -96,7 +120,7 @@ li {
 
 /* Footer */
 footer {
-    background: #333;
+    background: var(--text-color);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -109,8 +133,8 @@ footer {
         flex-direction: column;
     }
 
-    .social-media .social-icon {
-        width: 50px; /* Slightly larger for mobile */
+    .social-icon {
+        width: 50px;
         height: 50px;
     }
 }
