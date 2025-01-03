@@ -1,148 +1,131 @@
-/* General Body Styling */
+/* General Reset */
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    color: #f4f4f4; /* Adjusted for better readability */
-    background: #222; /* Dark background */
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Default text color for better readability */
+    background-color: #1a1a1a; /* Dark background for uniformity */
 }
 
-/* Links */
-a {
-    text-decoration: none;
-    color: inherit;
+header {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 0;
 }
 
-ul {
+header .sticky-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
     list-style: none;
-    padding: 0;
     margin: 0;
 }
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    border-radius: 5px;
+header .sticky-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header .logo {
-    max-width: 200px;
-}
-
-.sticky-nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-.sticky-nav ul li a {
-    color: #fff;
-    font-size: 1rem;
-    padding: 5px 10px;
-    transition: background 0.3s, box-shadow 0.3s;
-    border-radius: 5px;
-}
-
-.sticky-nav ul li a:hover {
-    background: #555;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+header .sticky-nav a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
 #hero {
-    background: url('Images/wood-texture.jpeg') no-repeat center center/cover; /* Restored wood texture */
-    position: relative;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: url("Images/wood-texture.jpeg") no-repeat center center/cover;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    color: #fff; /* White text */
+    color: #FFFFFF;
+    padding: 100px 20px;
 }
 
 #hero h1 {
-    font-size: 2.5rem;
-    color: #fff; /* White for "Welcome to Veteran Builders" */
+    font-size: 2.5em;
+    color: #FF0000; /* Red for emphasis */
 }
 
 #hero p {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 1.2em;
 }
 
-/* Padded Sections */
-section {
-    padding: 40px 20px;
-    background: #fff; /* Light background for padded sections */
-    border-radius: 5px;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Page Content */
+.page-content h2 {
+    color: #FFFFFF;
+    text-align: center;
 }
 
-/* Reasons to Choose Us */
 .reason-item {
+    background: #262626; /* Darker padding */
     padding: 20px;
-    margin: 20px 0;
-    background: #fff; /* Light section background */
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
 }
 
 .reason-title {
+    color: #FF0000; /* Red for emphasis on "Why Choose Us" headings */
     text-align: center;
-    font-size: 1.5rem;
-    color: #00bcd4; /* Blue accent color */
-    margin-bottom: 10px;
 }
 
 .reason-description {
+    color: #FFFFFF; /* Bright white for readability */
     text-align: left;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333; /* Improved readability */
+    margin-top: 10px;
 }
 
 /* Call-to-Action */
 .call-to-action {
     text-align: center;
-    padding: 20px;
-    background: #0066cc; /* Blue for "Request a Quote" */
-    color: #fff;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin: 20px 0;
-    transition: background 0.3s, transform 0.3s;
+    margin: 40px 0;
 }
 
-.call-to-action:hover {
-    background: #004a99;
-    transform: scale(1.05);
+.call-to-action a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-container a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer .footer-container a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media img {
+    width: 25px;
+    margin: 0 10px;
 }
 
 /* Contact Form */
-#contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
+#contact-form {
+    margin: 20px;
     padding: 20px;
-    background: #fff; /* Restored light form background */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #262626;
+    border-radius: 10px;
 }
 
 #contact-form label {
+    color: #FFFFFF;
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
 #contact-form input,
@@ -150,63 +133,54 @@ section {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 
 #contact-form button {
-    width: 100%;
-    padding: 10px;
-    background: #0066cc; /* Blue button */
-    color: #fff;
-    font-size: 1rem;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
 }
 
 #contact-form button:hover {
-    background: #004a99;
-    transform: scale(1.05);
+    background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+/* Services Page */
+.services-section {
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
+    width: 90%;
+    background: #333333;
+    border-radius: 10px;
 }
 
-footer .social-media img {
-    width: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s;
+.services-section h3 {
+    color: #FF0000;
+    text-align: center;
 }
 
-footer .social-media img:hover {
-    transform: scale(1.2);
+.services-section p {
+    color: #FFFFFF;
+    text-align: left;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
     header .sticky-nav ul {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    #hero h1 {
-        font-size: 2rem;
+    .reason-item, .services-section {
+        width: 100%;
     }
 
-    .reason-item {
-        padding: 15px;
-    }
-
-    #contact-form form {
+    #contact-form {
         padding: 10px;
     }
 }
