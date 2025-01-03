@@ -26,24 +26,48 @@
     </header>
 
     <!-- Contact Section -->
-    <section id="services-page">
+    <section id="contact-details" class="page-content">
         <div class="container">
             <h2>Contact Us</h2>
             <p><strong>Email:</strong> <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
             <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
-            <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+            <p>Connect with us on social media:</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/veteran.builders" target="_blank" aria-label="Instagram">
+                    <img src="Images/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank" aria-label="Facebook">
+                    <img src="Images/facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form">
+        <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <!-- Redirect to Thank-You Page -->
+            <input type="hidden" name="_next" value="http://veteranbuildersco.com/thank-you.html">
+            
+            <!-- Anti-Spam Field -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="call-to-action">
+        Request a Quote
     </section>
 
     <!-- Footer -->
