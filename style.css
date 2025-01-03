@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #FFFFFF;
+    color: #FFFFFF; /* Default text color for readability */
     background-color: #1a1a1a; /* Uniform dark background */
 }
 
@@ -39,12 +39,12 @@ header .sticky-nav a:hover {
 }
 
 #hero h1 {
-    font-size: 3rem; /* Updated size for v5 */
-    color: #FF0000; /* Red heading for v5 */
+    font-size: 3rem; /* Updated size for v5.1 */
+    color: #FF0000; /* Red heading for v5.1 */
 }
 
 #hero p {
-    font-size: 1.2rem; /* White body text */
+    font-size: 1.2rem; /* White body text for v5.1 */
 }
 
 /* Section Content */
@@ -54,7 +54,7 @@ header .sticky-nav a:hover {
 }
 
 .reason-item {
-    background: #262626;
+    background: #262626; /* Slightly lighter dark-gray padding */
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -63,7 +63,7 @@ header .sticky-nav a:hover {
 }
 
 .reason-title {
-    color: #FF0000; /* Red for headings */
+    color: #FF0000; /* Red for headings in v5.1 */
     text-align: center;
     margin-bottom: 10px;
 }
@@ -71,6 +71,7 @@ header .sticky-nav a:hover {
 .reason-description {
     color: #FFFFFF; /* Bright white for readability */
     text-align: left;
+    margin-top: 10px;
 }
 
 /* Call-to-Action */
@@ -81,9 +82,9 @@ header .sticky-nav a:hover {
 
 .call-to-action a {
     display: inline-block;
-    background-color: #007BFF; /* Blue button for v5 */
+    background-color: #007BFF; /* Blue button for v5.1 */
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 7.5px 15px; /* 3/4 size of the previous button */
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -91,28 +92,6 @@ header .sticky-nav a:hover {
 
 .call-to-action a:hover {
     background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .footer-container a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-footer .footer-container a:hover {
-    text-decoration: underline;
-}
-
-footer .social-media img {
-    width: 25px;
-    margin: 0 10px;
 }
 
 /* Services Page */
@@ -168,6 +147,28 @@ footer .social-media img {
 
 #contact-form button:hover {
     background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-container a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer .footer-container a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media img {
+    width: 25px;
+    margin: 0 10px;
 }
 
 /* Media Queries */
