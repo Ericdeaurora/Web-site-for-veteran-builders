@@ -6,6 +6,8 @@
     <title>Contact Us - Veteran Builders</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -25,28 +27,17 @@
         </div>
     </header>
 
-    <!-- Informational Section -->
-    <section id="process-info" class="page-content">
+    <!-- Contact Section -->
+    <section id="contact-details">
         <div class="container">
             <h2>Let’s Get Started</h2>
-            <p>
-                At Veteran Builders, we believe communication is key to a successful project. When you fill out the form below, you’re taking the first step toward transforming your space. Here’s what happens next:
-            </p>
-            <ol>
-                <li>We’ll review your details and reach out within 1-2 business days.</li>
-                <li>Our team will schedule a consultation to discuss your vision and needs.</li>
-                <li>You’ll receive a personalized quote for your project.</li>
-            </ol>
-            <p>
-                Ready to get started? Fill out the form below, and let’s make your dream project a reality!
-            </p>
+            <p>Fill out the form below, and we’ll contact you within 1-2 business days to discuss your project.</p>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section id="contact-form" class="page-content">
+    <section id="contact-form">
         <div class="container">
-            <h2>Contact Us</h2>
             <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -57,15 +48,17 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
-                <!-- Redirect to Thank-You Page -->
                 <input type="hidden" name="_next" value="http://veteranbuildersco.com/thank-you.html">
-                
-                <!-- Anti-Spam Field -->
                 <input type="hidden" name="_captcha" value="false">
                 
                 <button type="submit" class="button">Submit</button>
             </form>
         </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="call-to-action">
+        <a href="contact.html">Request a Quote</a>
     </section>
 
     <!-- Footer -->
