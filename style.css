@@ -2,93 +2,99 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #FFFFFF; /* Default text color for better readability */
-    background-color: #1a1a1a; /* Dark background for uniformity */
+    color: #FFFFFF;
+    background-color: #1a1a1a; /* Uniform dark background */
 }
 
+/* Header */
 header {
     background-color: #333333;
-    color: #FFFFFF;
     padding: 10px 0;
+    text-align: center;
 }
 
-header .sticky-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+header img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+header nav ul {
     list-style: none;
-    margin: 0;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
 }
 
-header .sticky-nav a {
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
 }
 
-header .sticky-nav a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
 }
 
 /* Hero Section */
 #hero {
     background: url("Images/wood-texture.jpeg") no-repeat center center/cover;
-    text-align: center;
     color: #FFFFFF;
+    text-align: center;
     padding: 100px 20px;
 }
 
 #hero h1 {
     font-size: 2.5em;
-    color: #FF0000; /* Red for emphasis */
+    color: #FF0000;
 }
 
 #hero p {
     font-size: 1.2em;
 }
 
-/* Page Content */
-.page-content h2 {
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+}
+
+.section.light {
+    background-color: #262626;
     color: #FFFFFF;
+}
+
+.section.dark {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+}
+
+.section h2 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #FF0000;
 }
 
-.reason-item {
-    background: #262626; /* Darker padding */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
+.section p {
+    line-height: 1.6;
 }
 
-.reason-title {
-    color: #FF0000; /* Red for emphasis on "Why Choose Us" headings */
-    text-align: center;
-}
-
-.reason-description {
-    color: #FFFFFF; /* Bright white for readability */
-    text-align: left;
-    margin-top: 10px;
-}
-
-/* Call-to-Action */
-.call-to-action {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.call-to-action a {
+/* Buttons */
+.button {
     display: inline-block;
     background-color: #007BFF;
     color: #FFFFFF;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
 }
 
-.call-to-action a:hover {
+.button:hover {
     background-color: #0056b3;
 }
 
@@ -96,91 +102,27 @@ header .sticky-nav a:hover {
 footer {
     background-color: #333333;
     color: #FFFFFF;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 10px;
 }
 
-footer .footer-container a {
+footer a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-footer .footer-container a:hover {
+footer a:hover {
     text-decoration: underline;
-}
-
-footer .social-media img {
-    width: 25px;
-    margin: 0 10px;
-}
-
-/* Contact Form */
-#contact-form {
-    margin: 20px;
-    padding: 20px;
-    background: #262626;
-    border-radius: 10px;
-}
-
-#contact-form label {
-    color: #FFFFFF;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    background-color: #007BFF;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Services Page */
-.services-section {
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    background: #333333;
-    border-radius: 10px;
-}
-
-.services-section h3 {
-    color: #FF0000;
-    text-align: center;
-}
-
-.services-section p {
-    color: #FFFFFF;
-    text-align: left;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    header .sticky-nav ul {
+    header nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .reason-item, .services-section {
-        width: 100%;
-    }
-
-    #contact-form {
-        padding: 10px;
+    header nav ul li {
+        margin: 10px 0;
     }
 }
