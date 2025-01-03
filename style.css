@@ -82,13 +82,18 @@ header .logo {
     margin-bottom: 20px;
 }
 
+/* Page Background for Consistent Gray */
+.page-background {
+    background-color: #f0f0f0; /* Matches gray tone across all pages */
+    padding: 40px 20px;
+}
+
 /* Transparent Sections for Home Page */
 #home-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 40px 20px;
     text-align: center;
     background: transparent;
 }
@@ -120,27 +125,9 @@ header .logo {
 }
 
 /* About Section */
-#about {
-    background: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    color: #0066cc;
-    margin-bottom: 20px;
-}
-
-#about p {
-    color: #555;
-    line-height: 1.8;
-}
-
-/* Services Page */
 #services-page {
-    background: url('Images/services-background.jpg') no-repeat center center/cover;
+    background: #f0f0f0;
     padding: 40px 20px;
-    color: #fff;
     text-align: center;
 }
 
@@ -148,15 +135,15 @@ header .logo {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #services-page h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffcc00; /* Highlighted heading */
+    color: #0066cc;
 }
 
 #services-page p {
@@ -232,15 +219,6 @@ footer .social-media img {
 
 footer .social-media img:hover {
     transform: scale(1.2);
-}
-
-/* Remove Social Media Icons Except Footer */
-.social-media {
-    display: none;
-}
-
-footer .social-media {
-    display: flex;
 }
 
 /* Responsive Design */
