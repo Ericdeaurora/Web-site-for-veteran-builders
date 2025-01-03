@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f0f0f0; /* Restored consistent gray background */
+    background-color: #f4f4f4; /* Uniform gray background */
 }
 
 a {
@@ -117,7 +117,7 @@ header .logo {
 
 /* About, Services, and Contact Pages */
 .page-content {
-    background-color: #f0f0f0; /* Consistent gray background */
+    background-color: #f4f4f4; /* Restored consistent gray */
     padding: 40px 20px;
     text-align: center;
 }
