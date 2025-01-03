@@ -1,90 +1,111 @@
 /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    color: #FFFFFF; /* Default text color for readability */
-    background-color: #1a1a1a; /* Uniform dark background */
+    background-color: #1e1e1e;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #333;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header .sticky-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+header .logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+header nav ul {
     list-style: none;
-    margin: 0;
+    text-align: center;
+    padding: 10px 0;
 }
 
-header .sticky-nav a {
-    color: #FFFFFF;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1rem;
 }
 
-header .sticky-nav a:hover {
-    text-decoration: underline;
+header nav ul li a:hover {
+    color: #ff0000;
 }
 
 /* Hero Section */
 #hero {
-    background: url("Images/wood-texture.jpeg") no-repeat center center/cover;
+    background: url('Images/wood-texture.jpeg') center/cover no-repeat;
+    color: #ffffff;
     text-align: center;
-    color: #FFFFFF;
     padding: 100px 20px;
 }
 
 #hero h1 {
-    font-size: 3rem; /* Updated size for v5.1 */
-    color: #FF0000; /* Red heading for v5.1 */
+    font-size: 3rem;
+    color: #ff0000;
 }
 
 #hero p {
-    font-size: 1.2rem; /* White body text for v5.1 */
-}
-
-/* Section Content */
-.page-content h2 {
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.reason-item {
-    background: #262626; /* Slightly lighter dark-gray padding */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
-}
-
-.reason-title {
-    color: #FF0000; /* Red for headings in v5.1 */
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.reason-description {
-    color: #FFFFFF; /* Bright white for readability */
-    text-align: left;
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 
-/* Call-to-Action */
+/* Why Us Section */
+section.why-us {
+    background-color: #2a2a2a;
+    padding: 50px 20px;
+}
+
+section.why-us h2 {
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+section.why-us .reason {
+    background-color: #333;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section.why-us .reason h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+section.why-us .reason p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Call to Action */
 .call-to-action {
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .call-to-action a {
-    display: inline-block;
-    background-color: #007BFF; /* Blue button for v5.1 */
-    color: #FFFFFF;
-    padding: 7.5px 15px; /* 3/4 size of the previous button */
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -94,95 +115,49 @@ header .sticky-nav a:hover {
     background-color: #0056b3;
 }
 
-/* Services Page */
-.services-section {
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    background: #333333;
-    border-radius: 10px;
-}
-
-.services-section h3 {
-    color: #FF0000; /* Red headings */
-    text-align: center;
-}
-
-.services-section p {
-    color: #FFFFFF; /* White text */
-    text-align: left;
-}
-
-/* Contact Form */
-#contact-form {
-    margin: 20px;
-    padding: 20px;
-    background: #262626; /* Restored light form background */
-    border-radius: 10px;
-}
-
-#contact-form label {
-    color: #FFFFFF;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    background-color: #007BFF;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #0056b3;
-}
-
 /* Footer */
 footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 20px 0;
+    background-color: #333;
     text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 0.9rem;
 }
 
-footer .footer-container a {
-    color: #FFFFFF;
+footer a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-footer .footer-container a:hover {
-    text-decoration: underline;
+footer a:hover {
+    color: #ff0000;
 }
 
-footer .social-media img {
-    width: 25px;
-    margin: 0 10px;
-}
-
-/* Media Queries */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    header .sticky-nav ul {
-        flex-direction: column;
-        align-items: center;
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-    .reason-item, .services-section {
-        width: 100%;
+    #hero {
+        padding: 50px 20px;
     }
 
-    #contact-form {
-        padding: 10px;
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .why-us .reason {
+        padding: 15px;
+    }
+
+    .call-to-action a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }
