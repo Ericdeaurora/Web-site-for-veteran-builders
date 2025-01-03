@@ -6,11 +6,8 @@
     <title>Contact Us - Veteran Builders</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <a href="index.html">
@@ -27,50 +24,28 @@
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section id="contact-details">
-        <div class="container">
-            <h2>Let’s Get Started</h2>
-            <p>Fill out the form below, and we’ll contact you within 1-2 business days to discuss your project.</p>
-        </div>
+    <section id="contact" class="page-content">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact-form">
-        <div class="container">
-            <form action="https://formsubmit.co/eric@veteranbuildersco.com" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <input type="hidden" name="_next" value="http://veteranbuildersco.com/thank-you.html">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <button type="submit" class="button">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Call-to-Action -->
-    <section class="call-to-action">
-        <a href="contact.html">Request a Quote</a>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <p><strong>Email:</strong> <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
             <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
             <div class="social-media">
-                <a href="https://www.instagram.com/veteran.builders" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/veteran.builders" target="_blank">
                     <img src="Images/instagram-icon.png" alt="Instagram">
                 </a>
-                <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank">
                     <img src="Images/facebook-icon.png" alt="Facebook">
                 </a>
             </div>
