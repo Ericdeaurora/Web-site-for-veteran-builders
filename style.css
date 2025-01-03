@@ -3,8 +3,8 @@ body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    color: #f4f4f4; /* Light text for dark background */
-    background: #222; /* Uniform dark background */
+    color: #f4f4f4;
+    background: #222; /* Dark background */
     padding: 20px;
 }
 
@@ -56,7 +56,7 @@ header .logo {
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(to right, #333, #444); /* Subtle gradient */
+    background: linear-gradient(to right, #333, #444);
     position: relative;
     height: 400px;
     display: flex;
@@ -70,33 +70,20 @@ header .logo {
     color: #fff;
 }
 
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-#hero h1, #hero p {
-    z-index: 2;
-    margin: 0;
-}
-
 #hero h1 {
     font-size: 2.5rem;
+    color: #ff4c4c; /* Updated to red */
 }
 
 #hero p {
     font-size: 1.2rem;
+    color: #fff;
 }
 
-/* Sections */
+/* Padded Sections */
 section {
     padding: 40px 20px;
+    background: #fff; /* Light background for padded sections */
     border-radius: 5px;
     margin: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -106,7 +93,7 @@ section {
 .reason-item {
     padding: 20px;
     margin: 20px 0;
-    background: #333; /* Dark section background */
+    background: #fff; /* Light section background */
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -114,7 +101,7 @@ section {
 .reason-title {
     text-align: center;
     font-size: 1.5rem;
-    color: #00bcd4; /* Accent color */
+    color: #ff4c4c; /* Updated to red */
     margin-bottom: 10px;
 }
 
@@ -122,16 +109,62 @@ section {
     text-align: left;
     font-size: 1rem;
     line-height: 1.6;
-    color: #ccc;
+    color: #333;
 }
 
 /* Call-to-Action */
 .call-to-action {
     text-align: center;
     padding: 20px;
-    background: #0066cc;
+    background: #ff4c4c; /* Updated to red */
     color: #fff;
     font-size: 1.2rem;
     border-radius: 5px;
     margin: 20px 0;
-    transition: background
+    transition: background 0.3s, transform 0.3s;
+}
+
+.call-to-action:hover {
+    background: #cc3a3a;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .sticky-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .reason-item {
+        padding: 15px;
+    }
+
+    #contact-form form {
+        padding: 10px;
+    }
+}
