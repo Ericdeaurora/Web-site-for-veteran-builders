@@ -6,51 +6,84 @@
     <title>Veteran Builders - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <img src="Images/logo.png" alt="Veteran Builders Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Veteran Builders Logo" class="logo">
+            </a>
+            <nav class="sticky-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1>Welcome to Veteran Builders</h1>
-        <p>Creating outdoor spaces that transform your vision into reality.</p>
+        <div class="hero-content">
+            <h1>Welcome to Veteran Builders</h1>
+            <p>Transforming your outdoor living spaces with quality and integrity.</p>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section light">
-        <h2>About Us</h2>
-        <p>Veteran Builders specializes in creating custom decks, outdoor living spaces, and more. As a veteran-owned business, we are committed to excellence and integrity in every project.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section dark">
-        <h2>Our Services</h2>
-        <p>From deck construction to remodeling, we offer a variety of services tailored to your needs.</p>
-        <a href="services.html" class="button">Explore Services</a>
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="why-us-list">
+                <div class="why-us-item">
+                    <img src="Images/design-icon.png" alt="Design Icon">
+                    <h3>Tailored Designs</h3>
+                    <p>Custom-built solutions to fit your vision, needs, and lifestyle.</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="Images/materials-icon.png" alt="Materials Icon">
+                    <h3>Quality Materials</h3>
+                    <p>Using only the best materials to ensure durability and style.</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="Images/craftsmanship-icon.png" alt="Craftsmanship Icon">
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Years of experience delivering exceptional results.</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="Images/integration-icon.png" alt="Integration Icon">
+                    <h3>Seamless Integration</h3>
+                    <p>Designs that blend perfectly with your existing space.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Call-to-Action -->
-    <section class="section light">
-        <h2>Get Started</h2>
-        <a href="contact.html" class="button">Request a Quote</a>
+    <section class="call-to-action">
+        <a href="contact.html">Request a Quote</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Veteran Builders. All rights reserved.</p>
-        <p>Email: <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
-        <p>Phone: <a href="tel:+19125061866">912-506-1866</a></p>
+        <div class="footer-container">
+            <p><strong>Email:</strong> <a href="mailto:eric@veteranbuildersco.com">eric@veteranbuildersco.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+19125061866">912-506-1866</a></p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/veteran.builders" target="_blank" aria-label="Instagram">
+                    <img src="Images/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/share/19eizGR8J5/" target="_blank" aria-label="Facebook">
+                    <img src="Images/facebook-icon.png" alt="Facebook">
+                </a>
+            </div>
+            <p>&copy; 2025 Veteran Builders. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
