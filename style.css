@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4; /* Uniform gray background */
+    background-color: #f4f4f4; /* Uniform gray background for all pages */
 }
 
 a {
@@ -82,16 +82,14 @@ header .logo {
     margin-bottom: 20px;
 }
 
-/* Transparent Sections for Home Page */
-#home-sections {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+/* Page Background for All Pages */
+.page-background, .page-content {
+    background-color: #f4f4f4; /* Restored consistent gray */
+    padding: 40px 20px;
     text-align: center;
-    background: transparent;
 }
 
+/* Transparent Sections for Home Page */
 #home-sections .section {
     border: 2px solid #0066cc;
     padding: 20px 40px;
@@ -99,6 +97,7 @@ header .logo {
     width: 80%;
     max-width: 600px;
     text-align: center;
+    margin: 20px auto;
 }
 
 #home-sections .section-link {
@@ -115,44 +114,17 @@ header .logo {
     border-radius: 5px;
 }
 
-/* About, Services, and Contact Pages */
-.page-content {
-    background-color: #f4f4f4; /* Restored consistent gray */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.page-content .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.page-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #0066cc;
-}
-
-.page-content p {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-/* Call-to-Action */
+/* Call-to-Action Section */
 .call-to-action {
-    margin: 40px 20px;
-    text-align: center;
+    margin: 40px auto;
     padding: 20px;
     background: #0066cc;
     color: #fff;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    max-width: 600px;
     transition: background 0.3s;
 }
 
