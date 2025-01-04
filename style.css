@@ -93,7 +93,7 @@ h1, h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-    text-align: left;
+    text-align: center;
 }
 
 #why-us h2 {
@@ -104,6 +104,7 @@ h1, h2 {
 
 #why-us .reason {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 #why-us h3 {
