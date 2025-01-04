@@ -276,3 +276,33 @@ footer a:hover {
     margin-bottom: 15px; /* Adds spacing between paragraphs */
     line-height: 1.6; /* Improves readability */
 }
+
+.accordion h3 {
+    cursor: pointer;
+    background-color: #d32f2f; /* Add red background */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.accordion h3:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+.accordion h3.active {
+    background-color: #b71c1c;
+}
+
+.accordion p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+}
