@@ -74,7 +74,7 @@ h1, h2 {
     text-align: center;
     background: linear-gradient(to bottom, #d32f2f, #333); /* Red to dark gray gradient */
     color: #fff; /* Ensures text is readable on the gradient */
-    padding: 50px 20px;
+    padding: 20px 20px;
     margin: 20px;
 }
 
