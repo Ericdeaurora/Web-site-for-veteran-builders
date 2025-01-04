@@ -109,6 +109,7 @@ h1, h2 {
 #why-us h3 {
     color: #007bff;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 /* Call-to-Action Section */
