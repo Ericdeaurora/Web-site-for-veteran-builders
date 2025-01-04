@@ -61,6 +61,14 @@ header .logo {
     color: #fff;
 }
 
+/* Accent Line Under Headings */
+h1, h2 {
+    border-bottom: 3px solid #d32f2f; /* Red underline */
+    padding-bottom: 10px; /* Space between text and line */
+    display: inline-block; /* Ensures the line is only as wide as the text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
 /* Hero Section */
 #hero {
     text-align: center;
