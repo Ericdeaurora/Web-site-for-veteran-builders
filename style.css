@@ -18,33 +18,47 @@ body {
 header {
     background-color: #222;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; /* Increased padding for more space */
 }
 
 header .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    text-align: center; /* Center-align the header contents */
 }
 
 /* Logo Styling */
 header .logo {
-    width: 150px; /* Adjusted size */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 80%; /* Adjust this percentage to fit the red box */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add space below it */
+}
+
+/* Navigation Styling */
+.sticky-nav ul {
+    display: flex;
+    justify-content: center; /* Center-align navigation items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid #007bff; /* Optional: visual separation line */
+    padding-top: 10px; /* Adjust padding to align with the green line */
+}
+
+.sticky-nav ul li {
+    margin: 0 15px; /* Adjust spacing between navigation items */
+}
+
+.sticky-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size as needed */
+    padding: 5px 10px;
+}
+
+.sticky-nav ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
 }
 
 /* Hero Section */
