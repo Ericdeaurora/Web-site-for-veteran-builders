@@ -302,7 +302,7 @@ footer a:hover {
 /* Accordion Styles */
 .accordion h3 {
     cursor: pointer;
-    background-color: #d32f2f; /* Red background */
+    background-color: (211, 47, 47) /* Red background */
     color: #fff; /* White text */
     padding: 15px 20px; /* Increased padding for better spacing */
     border: none;
