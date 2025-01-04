@@ -5,159 +5,120 @@
     box-sizing: border-box;
 }
 
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    color: white;
+    background-color: #121212;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-header .logo {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto;
+header .container img.logo {
+    max-width: 150px;
 }
 
 header nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-header nav ul li a:hover {
-    color: #ff0000;
+    font-size: 1rem;
 }
 
 /* Hero Section */
 #hero {
-    background: url('Images/wood-texture.jpeg') center/cover no-repeat;
-    color: #ffffff;
+    background: url("Images/hero-background.jpg") no-repeat center center/cover;
+    padding: 4rem 1rem;
     text-align: center;
-    padding: 100px 20px;
 }
 
-#hero h1 {
+#hero .hero-content h1 {
     font-size: 3rem;
-    color: #ff0000;
+    color: red;
 }
 
-#hero p {
+#hero .hero-content p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    color: white;
 }
 
-/* Why Us Section */
-section.why-us {
-    background-color: #2a2a2a;
-    padding: 50px 20px;
+/* Why Choose Us Section */
+#why-choose-us {
+    padding: 2rem 1rem;
+    background-color: #1f1f1f;
 }
 
-section.why-us h2 {
-    text-align: center;
-    color: #ff0000;
-    margin-bottom: 20px;
-}
-
-section.why-us .reason {
+.why-us-section {
+    margin: 1rem 0;
     background-color: #333;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
 }
 
-section.why-us .reason h3 {
-    color: #ff0000;
-    margin-bottom: 10px;
+.why-us-section h3 {
+    color: red;
+    font-size: 1.5rem;
 }
 
-section.why-us .reason p {
-    color: #ffffff;
+.why-us-section p {
+    color: white;
     font-size: 1rem;
 }
 
 /* Call to Action */
-.call-to-action {
+.cta {
     text-align: center;
-    margin: 30px 0;
+    margin: 2rem 0;
 }
 
-.call-to-action a {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
+.cta-button {
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-.call-to-action a:hover {
-    background-color: #0056b3;
+.cta-button:hover {
+    background-color: darkblue;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #1f1f1f;
     text-align: center;
-    padding: 20px;
-    color: #ffffff;
-    font-size: 0.9rem;
+    padding: 1rem 0;
 }
 
-footer a {
-    color: #ffffff;
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links li {
+    margin: 0 15px;
+}
+
+footer .footer-links li a {
+    color: white;
     text-decoration: none;
-}
-
-footer a:hover {
-    color: #ff0000;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #hero {
-        padding: 50px 20px;
-    }
-
-    #hero h1 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
-    }
-
-    .why-us .reason {
-        padding: 15px;
-    }
-
-    .call-to-action a {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
+    font-size: 0.9rem;
 }
