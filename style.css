@@ -277,32 +277,68 @@ footer a:hover {
     line-height: 1.6; /* Improves readability */
 }
 
+/* About Us Section Styling */
+#about {
+    background-color: #fff; /* Matches the "Why Choose Us" section background */
+    padding: 20px; /* Adds consistent padding */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px 0; /* Adds vertical spacing */
+}
+
+#about h1 {
+    color: #222; /* Keeps the existing font color */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+}
+
+#about p {
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Add this updated accordion styling below the existing About Us section or at the end of your CSS */
+
+/* Accordion Styles */
 .accordion h3 {
     cursor: pointer;
-    background-color: #d32f2f; /* Add red background */
-    color: #fff;
-    padding: 10px 15px;
+    background-color: #d32f2f; /* Red background */
+    color: #fff; /* White text */
+    padding: 15px 20px; /* Increased padding for better spacing */
     border: none;
     outline: none;
-    text-align: left;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    font-size: 1.1rem; /* Adjusted font size for better readability */
+    font-weight: bold; /* Makes text stand out */
+    border-radius: 5px; /* Rounded edges */
+    margin-bottom: 10px; /* Adds spacing between headers */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
 }
 
 .accordion h3:hover {
-    background-color: #b71c1c; /* Darker red on hover */
+    background-color: #b71c1c; /* Slightly darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .accordion h3.active {
-    background-color: #b71c1c;
+    background-color: #b71c1c; /* Darker red when active */
+    transform: translateY(0); /* Remove lift effect */
 }
 
 .accordion p {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     background-color: #f9f9f9;
-    padding: 10px 15px;
-    border-top: 1px solid #ddd;
+    padding: 0 20px; /* Add padding inside content */
     font-size: 1rem;
+    line-height: 1.6; /* Improve readability */
+    border-left: 3px solid #d32f2f; /* Accent line on the left */
+    border-right: 3px solid #d32f2f; /* Accent line on the right */
+    margin-bottom: 10px; /* Spacing between collapsed content */
+}
+
+.accordion p.open {
+    padding: 10px 20px; /* Restore padding when open */
 }
