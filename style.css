@@ -21,7 +21,7 @@ header {
     padding: 10px 0;
 }
 
-header .header-content {
+header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +39,12 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Logo Styling */
+header .logo {
+    width: 150px; /* Adjusted size */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* Hero Section */
@@ -110,17 +116,39 @@ header nav ul li a {
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #222;
     color: #fff;
 }
 
+footer .social-media {
+    margin: 15px 0;
+}
+
 footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 30px; /* Adjusted size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+footer .social-media a:hover img {
+    filter: brightness(1.2); /* Brightens on hover */
+}
+
+/* Footer Text Styling */
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
     color: #007bff;
-    margin: 0 5px;
     text-decoration: none;
 }
 
-footer .social-media a:hover {
+footer a:hover {
     color: #0056b3;
 }
