@@ -1,49 +1,126 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
+    padding: 0 15px;
 }
+
+/* Header Styling */
 header {
-    background-color: #444;
-    padding: 10px 20px;
-}
-header .logo {
-    max-height: 50px;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-#hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: url('Images/hero.jpg') no-repeat center center/cover;
-}
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.cta-button:hover {
-    background-color: darkblue;
-}
-footer {
-    text-align: center;
-    padding: 10px 20px;
     background-color: #222;
     color: #fff;
+    padding: 10px 0;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Why Us Section */
+#why-us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#why-us h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#why-us .reason {
+    margin-bottom: 20px;
+}
+
+#why-us h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+/* Call-to-Action Section */
+#call-to-action {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+#call-to-action a.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#call-to-action a.cta-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer .social-media a {
+    color: #007bff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #0056b3;
 }
