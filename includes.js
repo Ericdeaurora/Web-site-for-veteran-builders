@@ -1,16 +1,15 @@
-function includeHTML() {
-    const includes = document.querySelectorAll("[data-include]");
-    includes.forEach(async (element) => {
-        const file = element.getAttribute("data-include");
-        if (file) {
-            const response = await fetch(file);
-            if (response.ok) {
-                element.innerHTML = await response.text();
-            } else {
-                console.error(`Failed to load ${file}`);
-            }
-        }
-    });
-}
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("header").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
 
-includeHTML();
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("footer").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+});
