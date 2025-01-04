@@ -1,124 +1,49 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: #121212;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
-
-/* Header */
 header {
-    background-color: #1f1f1f;
-    padding: 1rem 0;
-    text-align: center;
+    background-color: #444;
+    padding: 10px 20px;
 }
-
-header .container img.logo {
-    max-width: 150px;
+header .logo {
+    max-height: 50px;
 }
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-
-header nav ul li {
-    margin: 0 15px;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
-
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
 }
-
-/* Hero Section */
 #hero {
-    background: url("Images/hero-background.jpg") no-repeat center center/cover;
-    padding: 4rem 1rem;
     text-align: center;
+    padding: 50px 20px;
+    background: url('Images/hero.jpg') no-repeat center center/cover;
 }
-
-#hero .hero-content h1 {
-    font-size: 3rem;
-    color: red;
-}
-
-#hero .hero-content p {
-    font-size: 1.2rem;
-    color: white;
-}
-
-/* Why Choose Us Section */
-#why-choose-us {
-    padding: 2rem 1rem;
-    background-color: #1f1f1f;
-}
-
-.why-us-section {
-    margin: 1rem 0;
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.why-us-section h3 {
-    color: red;
-    font-size: 1.5rem;
-}
-
-.why-us-section p {
-    color: white;
-    font-size: 1rem;
-}
-
-/* Call to Action */
-.cta {
-    text-align: center;
-    margin: 2rem 0;
-}
-
 .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: blue;
     color: white;
-    padding: 1rem 2rem;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    font-size: 1.2rem;
 }
-
 .cta-button:hover {
     background-color: darkblue;
 }
-
-/* Footer */
 footer {
-    background-color: #1f1f1f;
     text-align: center;
-    padding: 1rem 0;
-}
-
-footer .footer-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-footer .footer-links li {
-    margin: 0 15px;
-}
-
-footer .footer-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
 }
