@@ -115,20 +115,43 @@ h1, h2 {
     text-align: left;
 }
 
-/* Click Below Section Styling */
-#click-below {
+/* Styling for "Click Below to Read About Our Process" Section */
+#process-info {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
     margin: 20px 0;
     text-align: center;
 }
 
-#click-below h2 {
+#process-info h2 {
     color: #222;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin: 0; /* Ensure no unnecessary margin */
+}
+
+/* Styling for "Contact Veteran Builders" Section */
+#contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+    margin: 20px 0; /* Adds space between sections */
     text-align: center;
+}
+
+#contact-info h2 {
+    color: #222;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#contact-info p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Call-to-Action Section */
