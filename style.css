@@ -8,10 +8,9 @@ body, h1, h2, h3, p, ul, li, a, input, textarea, button {
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    font-size: 0.9rem; /* Change: Reduced font size from 1rem to 0.9rem */
     background-color: #f5f5f5;
     color: #333;
-    line-height: 1.7; /* Change: Adjusted line height for readability */
+    line-height: 1.6;
     padding: 0 15px;
 }
 
@@ -19,40 +18,40 @@ body {
 header {
     background-color: #222;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 0; /* Increased padding for more space */
 }
 
 header .header-container {
-    text-align: center;
+    text-align: center; /* Center-align the header contents */
 }
 
 /* Logo Styling */
 header .logo {
-    max-width: 80%;
-    height: auto;
+    max-width: 80%; /* Adjust this percentage to fit the red box */
+    height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* Center the logo and add space below it */
 }
 
 /* Navigation Styling */
 .sticky-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center-align navigation items */
     list-style: none;
     padding: 0;
     margin: 0;
-    border-top: 2px solid #007bff;
-    padding-top: 10px;
+    border-top: 2px solid #007bff; /* Optional: visual separation line */
+    padding-top: 10px; /* Adjust padding to align with the green line */
 }
 
 .sticky-nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Adjust spacing between navigation items */
 }
 
 .sticky-nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem; /* Change: Reduced font size */
+    font-size: 1rem; /* Adjust font size as needed */
     padding: 5px 10px;
 }
 
@@ -64,28 +63,28 @@ header .logo {
 
 /* Accent Line Under Headings */
 h1, h2 {
-    border-bottom: 3px solid #d32f2f;
-    padding-bottom: 10px;
-    display: inline-block;
-    margin-bottom: 20px;
+    border-bottom: 3px solid #d32f2f; /* Red underline */
+    padding-bottom: 10px; /* Space between text and line */
+    display: inline-block; /* Ensures the line is only as wide as the text */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
 /* Hero Section */
 #hero {
     text-align: center;
-    background: linear-gradient(to bottom, #d32f2f, #333);
-    color: #fff;
+    background: linear-gradient(to bottom, #d32f2f, #333); /* Red to dark gray gradient */
+    color: #fff; /* Ensures text is readable on the gradient */
     padding: 20px;
     margin: 20px;
 }
 
 #hero h1 {
-    font-size: 2.3rem; /* Change: Reduced from 2.5rem */
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 #hero p {
-    font-size: 1rem; /* Change: Reduced from 1.2rem */
+    font-size: 1.2rem;
 }
 
 /* Why Us Section */
@@ -100,7 +99,6 @@ h1, h2 {
 
 #why-us h2 {
     color: #222;
-    font-size: 1.5rem; /* Change: Reduced size */
     margin-bottom: 10px;
     text-align: center !important;
     display: block;
@@ -117,54 +115,108 @@ h1, h2 {
     text-align: left;
 }
 
-#why-us p {
-    font-size: 0.875rem; /* Change: Reduced font size */
-    margin-bottom: 15px;
-    line-height: 1.6;
+/* Styling for "Click Below to Read About Our Process" Section */
+#process-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+    margin: 20px 0;
+    text-align: center;
 }
 
-/* Accordion Section */
-.accordion h3 {
-    cursor: pointer;
-    background-color: rgba(211, 47, 47, 0.5);
+#process-info h2 {
+    color: #222;
+    font-size: 1.8rem;
+    margin: 0; /* Ensure no unnecessary margin */
+}
+
+/* Styling for "Contact Veteran Builders" Section */
+#contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+    margin: 20px 0; /* Adds space between sections */
+    text-align: center;
+}
+
+#contact-info h2 {
+    color: #222;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#contact-info p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Call-to-Action Section */
+#call-to-action {
+    text-align: center;
+    background-color: #007bff;
     color: #fff;
-    padding: 15px 20px;
-    border: none;
-    outline: none;
-    font-size: 1rem; /* Change: Reduced from 1.1rem */
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    padding: 30px 20px;
+    margin: 30px 0;
+    border-radius: 8px;
 }
 
-.accordion h3:hover {
-    background-color: #b71c1c;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.accordion h3.active {
-    background-color: #b71c1c;
-    transform: translateY(0);
-}
-
-.accordion p {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    background-color: #f9f9f9;
-    padding: 0 20px;
-    font-size: 0.875rem; /* Change: Reduced font size */
-    line-height: 1.6;
-    border-left: 3px solid #d32f2f;
-    border-right: 3px solid #d32f2f;
-    margin-bottom: 10px;
-}
-
-.accordion p.open {
+#call-to-action a.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
     padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#call-to-action a.cta-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#call-to-action a.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#call-to-action a.secondary-button:hover {
+    background-color: #004080; /* Even darker blue on hover */
+    color: #fff;
+}
+
+/* Contact Call-to-Action Section */
+#contact-call-to-action {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    text-align: center;
+}
+
+#contact-call-to-action h2 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+#contact-call-to-action p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
 }
 
 /* Footer Styling */
@@ -175,6 +227,228 @@ footer {
     color: #fff;
 }
 
+footer .social-media {
+    margin: 15px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 30px; /* Adjusted size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+footer .social-media a:hover img {
+    filter: brightness(1.2); /* Brightens on hover */
+}
+
+/* Footer Text Styling */
 footer p {
-    font-size: 0.875rem; /* Change: Reduced font size */
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+#services {
+    background-color: #fff; /* Matches the "Why Choose Us" section background */
+    padding: 20px; /* Adds consistent padding */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px 0; /* Adds vertical spacing */
+    text-align: inherit;
+}
+
+#services h2 {
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center !important;
+    display: block;
+}
+
+#services .service {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#services h3 {
+    color: #222;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjust header logo and navigation */
+    header .logo {
+        max-width: 90%; /* Shrink logo for smaller screens */
+        margin: 0 auto 15px; /* Center-align logo */
+    }
+
+    .sticky-nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: center; /* Center-align navigation */
+    }
+
+    .sticky-nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    /* Contact Form Adjustments */
+    #contact-form {
+        padding: 15px;
+    }
+
+    #contact-form form {
+        display: flex;
+        flex-direction: column; /* Stack form elements */
+        align-items: stretch;
+    }
+
+    #contact-form label {
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 15px; /* Add spacing between inputs */
+        width: 100%; /* Full width for inputs */
+    }
+
+    #contact-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    #contact-form button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Contact Info Section */
+    #contact-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #contact-info h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+        margin-bottom: 15px;
+    }
+
+    #contact-info p {
+        font-size: 1rem; /* Adjust text size */
+        margin-bottom: 20px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .social-media a img {
+        width: 25px; /* Adjust icon size */
+    }
+    
+}
+/* About Us Section Styling */
+#about {
+    background-color: #fff; /* Matches the "Why Choose Us" section background */
+    padding: 20px; /* Adds consistent padding */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px 0; /* Adds vertical spacing */
+}
+
+#about h1 {
+    color: #222; /* Keeps the existing font color */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+}
+
+#about p {
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* About Us Section Styling */
+#about {
+    background-color: #fff; /* Matches the "Why Choose Us" section background */
+    padding: 20px; /* Adds consistent padding */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px 0; /* Adds vertical spacing */
+}
+
+#about h1 {
+    color: #222; /* Keeps the existing font color */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+}
+
+#about p {
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Add this updated accordion styling below the existing About Us section or at the end of your CSS */
+
+/* Accordion Styles */
+.accordion h3 {
+    cursor: pointer;
+    background-color: rgba(211, 47, 47, 0.5); /* Red background */
+    color: #fff; /* White text */
+    padding: 15px 20px; /* Increased padding for better spacing */
+    border: none;
+    outline: none;
+    font-size: 1.1rem; /* Adjusted font size for better readability */
+    font-weight: bold; /* Makes text stand out */
+    border-radius: 5px; /* Rounded edges */
+    margin-bottom: 10px; /* Adds spacing between headers */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.accordion h3:hover {
+    background-color: #b71c1c; /* Slightly darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.accordion h3.active {
+    background-color: #b71c1c; /* Darker red when active */
+    transform: translateY(0); /* Remove lift effect */
+}
+
+.accordion p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #f9f9f9;
+    padding: 0 20px; /* Add padding inside content */
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability */
+    border-left: 3px solid #d32f2f; /* Accent line on the left */
+    border-right: 3px solid #d32f2f; /* Accent line on the right */
+    margin-bottom: 10px; /* Spacing between collapsed content */
+}
+
+.accordion p.open {
+    padding: 10px 20px; /* Restore padding when open */
 }
