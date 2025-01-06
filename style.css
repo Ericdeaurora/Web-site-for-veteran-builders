@@ -115,21 +115,111 @@ h1, h2 {
     text-align: left;
 }
 
-/* About Us Section Styling */
-#about-us {
+/* Styling for "Click Below to Read About Our Process" Section */
+#process-info {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px; /* Adds soft corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a raised effect */
-    margin: 20px 0; /* Space around the section */
-    text-align: center; /* Centers the content */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+    margin: 20px 0;
+    text-align: center;
 }
 
-#about-us h2 {
+#process-info h2 {
     color: #222;
-    margin-bottom: 10px;
     font-size: 1.8rem;
+    margin: 0; /* Ensure no unnecessary margin */
 }
 
-#about-us p {
-    font-size: 1rem
+/* Styling for "Contact Veteran Builders" Section */
+#contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+    margin: 20px 0; /* Adds space between sections */
+    text-align: center;
+}
+
+#contact-info h2 {
+    color: #222;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#contact-info p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Call-to-Action Section */
+#call-to-action {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+#call-to-action a.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#call-to-action a.cta-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Accordion Styles */
+.accordion h3 {
+    cursor: pointer;
+    background-color: rgba(211, 47, 47, 0.5); /* Red background */
+    color: #fff; /* White text */
+    padding: 15px 20px; /* Increased padding for better spacing */
+    border: none;
+    outline: none;
+    font-size: 1.1rem; /* Adjusted font size for better readability */
+    font-weight: bold; /* Makes text stand out */
+    border-radius: 5px; /* Rounded edges */
+    margin-bottom: 10px; /* Adds spacing between headers */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.accordion h3:hover {
+    background-color: #b71c1c; /* Slightly darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.accordion h3.active {
+    background-color: #b71c1c; /* Darker red when active */
+    transform: translateY(0); /* Remove lift effect */
+}
+
+.accordion p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #f9f9f9;
+    padding: 0 20px; /* Add padding inside content */
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability */
+    border-left: 3px solid #d32f2f; /* Accent line on the left */
+    border-right: 3px solid #d32f2f; /* Accent line on the right */
+    margin-bottom: 10px; /* Spacing between collapsed content */
+}
+
+.accordion p.open {
+    padding: 10px 20px; /* Restore padding when open */
+}
