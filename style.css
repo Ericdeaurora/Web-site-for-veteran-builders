@@ -180,22 +180,6 @@ h1, h2 {
     color: #fff;
 }
 
-#call-to-action a.cta-button {
-    display: inline-block;
-    background-color: #fff;
-    color: #007bff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#call-to-action a.secondary-button:hover {
-    background-color: #004080; /* Even darker blue on hover */
-    color: #fff;
-}
-
 /* Contact Call-to-Action Section */
 #contact-call-to-action {
     background-color: #fff;
@@ -338,26 +322,6 @@ footer a:hover {
     footer .social-media a img {
         width: 25px; /* Adjust icon size */
     }
-    
-}
-/* About Us Section Styling */
-#about {
-    background-color: #fff; /* Matches the "Why Choose Us" section background */
-    padding: 20px; /* Adds consistent padding */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    margin: 20px 0; /* Adds vertical spacing */
-}
-
-#about h1 {
-    color: #222; /* Keeps the existing font color */
-    margin-bottom: 15px; /* Adds space below the heading */
-    text-align: center; /* Centers the heading */
-}
-
-#about p {
-    margin-bottom: 15px; /* Adds spacing between paragraphs */
-    line-height: 1.6; /* Improves readability */
 }
 
 /* About Us Section Styling */
@@ -379,8 +343,6 @@ footer a:hover {
     margin-bottom: 15px; /* Adds spacing between paragraphs */
     line-height: 1.6; /* Improves readability */
 }
-
-/* Add this updated accordion styling below the existing About Us section or at the end of your CSS */
 
 /* Accordion Styles */
 .accordion h3 {
