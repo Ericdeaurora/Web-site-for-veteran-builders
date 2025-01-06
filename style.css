@@ -180,11 +180,15 @@ h1, h2 {
     color: #fff;
 }
 
-/* Additional Styling for Secondary Button in Call-to-Action */
-#call-to-action a.secondary-button {
-    background-color: #0056b3; /* Slightly darker blue for differentiation */
-    color: #fff; /* White text for contrast */
-    margin-left: 10px; /* Add spacing between buttons */
+#call-to-action a.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 #call-to-action a.secondary-button:hover {
