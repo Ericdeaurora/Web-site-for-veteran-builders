@@ -180,6 +180,18 @@ h1, h2 {
     color: #fff;
 }
 
+/* Additional Styling for Secondary Button in Call-to-Action */
+#call-to-action a.secondary-button {
+    background-color: #0056b3; /* Slightly darker blue for differentiation */
+    color: #fff; /* White text for contrast */
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+#call-to-action a.secondary-button:hover {
+    background-color: #004080; /* Even darker blue on hover */
+    color: #fff;
+}
+
 /* Contact Call-to-Action Section */
 #contact-call-to-action {
     background-color: #fff;
