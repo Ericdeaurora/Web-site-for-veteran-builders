@@ -259,6 +259,33 @@ footer a:hover {
     color: #0056b3;
 }
 
+#services {
+    background-color: #fff; /* Matches the "Why Choose Us" section background */
+    padding: 20px; /* Adds consistent padding */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin: 20px 0; /* Adds vertical spacing */
+    text-align: inherit;
+}
+
+#services h2 {
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center !important;
+    display: block;
+}
+
+#services .service {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#services h3 {
+    color: #222;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     /* Adjust header logo and navigation */
